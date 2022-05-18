@@ -1,10 +1,11 @@
 require 'string_builder'
 
 RSpec.describe StringBuilder do
-  #it "Intialize string works" do
-  #  result = StringBuilder.new()
-  #  expect(result).to eq ""
-  #end
+  it "Intialize string works" do
+    result = StringBuilder.new()
+    result = result.output
+    expect(result).to eq ""
+  end
 
   it "Checks string is added" do
     word = StringBuilder.new()
